@@ -13,8 +13,8 @@ st.set_page_config(page_title="HR Attrition Dashboard", layout="wide", initial_s
 @st.cache_data 
 # Define a function to load the dataset
 def load_data(): 
-    # Read the cleaned CSV file we generated in the Jupyter notebook
-    df = pd.read_csv(r'D:\Machine Learning Epsilon 2\Python Notes\IBM HR Analytics Employee Attrition & Performance\Cleaned_HR_Employee_Attrition.csv') 
+    # Read the cleaned CSV file (kept in the same folder as app.py so it also works when deployed)
+    df = pd.read_csv('Cleaned_HR_Employee_Attrition.csv') 
     # Return the loaded DataFrame so it can be used
     return df 
 
